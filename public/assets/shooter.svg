@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83px" height="79px" viewBox="0 0 83 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ship</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-413.000000, -515.000000)">
+            <g id="Group" transform="translate(87.000000, 46.000000)">
+                <g id="ship" transform="translate(326.000000, 469.000000)">
+                    <rect id="Rectangle" stroke="#979797" fill="#7483EC" x="0.5" y="40.5" width="82" height="24" rx="8"></rect>
+                    <rect id="Rectangle-2" stroke="#979797" fill="#7483EC" x="68.5" y="23.5" width="13" height="41" rx="6.5"></rect>
+                    <circle id="Oval-2" stroke="#979797" fill="#FFD4A0" cx="75" cy="23" r="6"></circle>
+                    <rect id="Rectangle-3" stroke="#979797" fill="#1C1C1C" x="70.5" y="0.5" width="7" height="20"></rect>
+                    <ellipse id="Oval" fill="#FFD4A0" cx="41.5" cy="49" rx="28.5" ry="28"></ellipse>
+                    <path d="M41.3189534,37 C48.4834185,31.2875473 53.8603451,28.9620381 57.4497332,30.0234725 C61.0391214,31.084907 63.9633157,36.0444757 66.2223162,44.9021787 C66.5109498,49.3170185 66.5109498,52.2607613 66.2223162,53.7334072 C65.476696,57.5376578 63.4315642,61.1993172 62.8008846,62.6649945 C61.8039959,64.9817291 58.8372806,67.5823357 53.9007387,70.4668144 C48.7037532,73.2566983 44.5098247,74.6516403 41.3189534,74.6516403 C38.128082,74.6516403 32.721518,73.2566983 25.0992613,70.4668144 C21.2589209,65.7271071 18.8363299,62.1896451 17.8314885,59.8544286 C16.826647,57.5192122 16.2825226,54.1621311 16.1991154,49.7831856 C16.9313083,42.7672626 17.9895767,38.5062007 19.3739206,37 C21.7523141,34.4122486 21.7523141,32.1888748 25.0992613,30.0234725 C27.8059015,28.272335 33.2124655,30.5978441 41.3189534,37 Z" id="Polygon" stroke="#4A4A4A" stroke-width="7" fill="#464646"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
