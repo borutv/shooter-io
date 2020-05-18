@@ -75,11 +75,18 @@ function renderPlayer(me, player) {
   );
   context.restore();
 
-  context.fillStyle = 'red';
+  context.fillStyle = 'black';
+  context.fillText(
+    player.username.slice(0,-3),
+  canvasX - PLAYER_RADIUS+9,
+    canvasY + PLAYER_RADIUS - 15);
+
+    context.fillStyle = 'white';
+    
   context.fillText(
     player.hp,
   canvasX - PLAYER_RADIUS+9,
-    canvasY + PLAYER_RADIUS - 15);
+    canvasY + PLAYER_RADIUS - 25);
 
 }
 

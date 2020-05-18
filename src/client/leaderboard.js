@@ -4,8 +4,10 @@ const leaderboard = document.getElementById('leaderboard');
 const rows = document.querySelectorAll('#leaderboard table tr');
 
 export function updateLeaderboard(data) {
+  var numOfPlayer= document.getElementById('numberOfPlayers');
+  numOfPlayer.innerText = data.length;
   for (let i = 0; i < data.length; i++) {
-    rows[i + 1].innerHTML = `<td>${escape(data[i].username.slice(0, 15)) || 'Anonymous'}</td><td id="${data[i].id}">${
+    rows[i + 1].innerHTML = `<td>${escape(data[i].username.slice(0, 15)) || 'Anonymtrous'}</td><td id="${data[i].id}">${
       data[i].score
     }</td>`;
   }

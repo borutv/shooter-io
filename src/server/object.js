@@ -1,6 +1,7 @@
 class Object {
-  constructor(id, x, y, dir, speed) {
+  constructor(id,username, x, y, dir, speed) {
     this.id = id;
+    this.username = username;
     this.x = x;
     this.y = y;
     this.direction = dir;
@@ -25,6 +26,7 @@ class Object {
   serializeForUpdate() {
     return {
       id: this.id,
+      username: this.username,
       x: this.x,
       y: this.y,
     };
