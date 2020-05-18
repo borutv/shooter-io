@@ -33,7 +33,7 @@ class Player extends ObjectClass {
   }
 
   takeBulletDamage() {
-    this.hp = 0;
+    this.hp -= 10;
   }
 
   onDealtDamage() {

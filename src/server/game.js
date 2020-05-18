@@ -20,6 +20,17 @@ class Game {
     this.players[socket.id] = new Player(socket.id, username, x, y);
   }
 
+  addBot() {
+    debugger;
+    var socketId = this.makeid(20);
+    var username = this.makeid(5);
+    this.sockets[socketId] = this.makeid(10);
+
+    const x = Constants.MAP_SIZE * (0.25 + Math.random() * 0.5);
+    const y = Constants.MAP_SIZE * (0.25 + Math.random() * 0.5);
+    this.players[socket.id] = new Player(socketId ,username, x, y);
+  }
+
   removePlayer(socket) {
     delete this.sockets[socket.id];
     delete this.players[socket.id];
@@ -86,7 +97,7 @@ class Game {
     return Object.values(this.players)
       .sort((p1, p2) => p2.score - p1.score)
       .slice(0, 5)
-      .map(p => ({ username: p.username, score: Math.round(p.score) }));
+      .map(p => ({id: p.id, username: p.username, score: Math.round(p.score) }));
   }
 
   createUpdate(player, leaderboard) {
@@ -105,6 +116,15 @@ class Game {
       leaderboard,
     };
   }
+  makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+ }
 }
 
 module.exports = Game;

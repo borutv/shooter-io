@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/45441109-f4d3-45f4-b69c-01870b63c63b/resourceGroups/TIAProject/providers/Microsoft.Web/sites/Shooter-io",
+    "appService.deploySubpath": ""
+}

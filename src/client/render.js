@@ -52,8 +52,8 @@ function renderBackground(x, y) {
     backgroundY,
     MAP_SIZE / 2,
   );
-  backgroundGradient.addColorStop(0, 'lightgray');
-  backgroundGradient.addColorStop(1, 'DarkGray');
+  backgroundGradient.addColorStop(0, 'darkred');
+  backgroundGradient.addColorStop(1, 'blue');
   context.fillStyle = backgroundGradient;
   context.fillRect(0, 0, canvas.width, canvas.height);
 }
@@ -111,6 +111,15 @@ export function startRendering() {
 
 // Replaces game rendering with main menu rendering.
 export function stopRendering() {
+  const { me, others, bullets } = getCurrentState();
+  var playerId = me.id;
+  playerId =playerId.slice(0, -3);
+  var elementScore = document.getElementById(playerId);
+  var myScore = elementScore.innerText;
+  var myScoreElement = document.getElementById('myScore');
+  myScoreElement.innerText = myScore;
+  console.log(me);
   clearInterval(renderInterval);
+  
   renderInterval = setInterval(renderMainMenu, 1000 / 60);
 }
